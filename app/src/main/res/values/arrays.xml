@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Kelas">
+        <item>Tidak Ada Pilihan</item>
+        <item>Eksekutif</item>
+        <item>Bisnis</item>
+        <item>Ekonomi AC</item>
+        <item>Ekonomi</item>
+    </string-array>
+
+    <string-array name="Dewasa">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="Bayi">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+</resources>
