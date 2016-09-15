@@ -68,22 +68,41 @@ public class MainActivity extends AppCompatActivity {
     private void doClick()
     {   String np = etNP.getText().toString();
         tvNP.setText("Nama Pemesan : "+np+ "\n");
-
+        if (np.isEmpty())
+        {
+            etNP.setError("Nama Pemesan Belum Diisi");
+        }
 
         String sa = etSA.getText().toString();
         tvSA.setText("Stasiun Awal : "+sa + "\n");
-
+        if (sa.isEmpty())
+        {
+            etSA.setError("Nama Stasiun Awal Belum Diisi");
+        }
 
         String st = etST.getText().toString();
         tvST.setText("Stasiun Tujuan : " +st+"\n");
 
+        if (st.isEmpty())
+        {
+            etST.setError("Nama Stasiun Tujuan Belum Diisi");
+        }
+
 
         String noid = etnoid.getText().toString();
         tvnoid.setText("Nomor ID :" +noid+"\n");
+        if (noid.isEmpty())
+        {
+            etnoid.setError("Nomor ID Belum Diisi");
+        }
 
 
         String tk = etTK.getText().toString();
         tvTK.setText("Tanggal Keberangkatan :" +tk);
+        if (tk.isEmpty())
+        {
+            etTK.setError("Tanggal Keberangkatan Belum Diisi");
+        }
 
 
         tvBB.setText("Kelas Kereta Api:" + sBB.getSelectedItem().toString()+"\n");
