@@ -7,227 +7,288 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#7eaef6"
     android:orientation="vertical"
     android:paddingBottom="10dp"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    android:paddingTop="10dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="5dp"
     tools:context="id.sch.smktelkom_mlg.xirpl3012learn.formisiantiketka.MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#021336"
+        android:src="@drawable/express" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="EXPRESS"
-        android:id="@+id/EXPRESS"
-        android:textSize="35dp"
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
         android:layout_gravity="center_horizontal" />
 
     <EditText
+        android:id="@+id/editTextNP"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextNP"
         android:hint="Nama Pemesan" />
 
     <EditText
+        android:id="@+id/editTextnoid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextnoid"
         android:hint="Nomor ID"
         android:inputType="numberSigned" />
 
     <TextView
+        android:id="@+id/textView7"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView7" />
+        android:layout_height="wrap_content" />
 
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <RadioButton
+            android:id="@+id/radioButtonSJ"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sekali Jalan"
-            android:id="@+id/radioButtonSJ"
             android:textColor="#f05f11" />
 
         <RadioButton
+            android:id="@+id/radioButtonPP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Pulang Pergi"
-            android:id="@+id/radioButtonPP"
             android:textColor="#f05f11" />
     </RadioGroup>
 
     <EditText
+        android:id="@+id/editTextSA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextSA"
         android:hint="Stasiun Asal"
         android:textColorHint="#036dca"/>
 
     <EditText
+        android:id="@+id/editTextST"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextST"
         android:hint="Stasiun Tujuan"
         android:textColorHint="#036dca"/>
 
     <EditText
+        android:id="@+id/editTextTK"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextTK"
         android:hint="Tanggal Keberangkatan"
         android:textColorHint="#036dca"/>
 
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
         android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#021336"
         android:src="@drawable/logo" />
 
     <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <TextView
+        android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Kelas"
-        android:id="@+id/textView5" />
+        android:textColor="#036dca"
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
     <Spinner
+        android:id="@+id/spinnerBB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/Kelas"
-        android:id="@+id/spinnerBB" />
+        android:entries="@array/Kelas" />
 
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Berat Bagasi"
-        android:id="@+id/textView4"
         android:textColor="#036dca"
         android:textSize="18dp" />
 
     <CheckBox
+        android:id="@+id/checkBoxB1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0-15KG"
-        android:textColor="#000000"
-        android:id="@+id/checkBoxB1" />
+        android:textColor="#000000" />
 
     <CheckBox
+        android:id="@+id/checkBoxB2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#000000"
         android:text="16-30KG"
-        android:id="@+id/checkBoxB2" />
+        android:textColor="#000000" />
 
     <CheckBox
+        android:id="@+id/checkBoxB3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="31-50KG"
-        android:textColor="#000000"
-        android:id="@+id/checkBoxB3" />
+        android:textColor="#000000" />
 
     <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Penumpang Dewasa"
-        android:id="@+id/textView2"
-        android:textSize="18dp"
-        android:textColor="#036dca" />
-
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinnerP1"
-        android:entries="@array/Dewasa"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Penumpang Bayi"
-        android:id="@+id/textView3"
         android:textColor="#036dca"
         android:textSize="18dp" />
 
     <Spinner
+        android:id="@+id/spinnerP1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:entries="@array/Dewasa"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Penumpang Bayi"
+        android:textColor="#036dca"
+        android:textSize="18dp" />
+
+    <Spinner
         android:id="@+id/spinnerP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:entries="@array/Bayi"/>
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="*Penumpang Bayi Tidak Mendapatkan Tempat Duduk"
-        android:id="@+id/textView"
-        android:textSize="13dp"
         android:textColor="#f9740e"
-        android:textColorHighlight="#fafafa" />
+        android:textColorHighlight="#fafafa"
+        android:textSize="13dp" />
 
     <TextView
+        android:id="@+id/textView12"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView6" />
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <Button
+        android:id="@+id/buttonkirim"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="KIRIM"
-        android:background="@drawable/buttonkirim"
-        android:id="@+id/buttonkirim"
         android:layout_gravity="center_horizontal"
+        android:background="@drawable/buttonkirim"
+        android:text="KIRIM"
         android:textColor="#fafafa"
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textViewNP"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewNP" />
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/textViewnoid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewnoid" />
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/textViewHasil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewHasil" />
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/textViewSA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewSA" />
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/textViewST"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewST" />
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/textViewTK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewTK" />
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/textViewKelas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewKelas" />
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/textViewBB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewBB" />
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/textViewPD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewPD" />
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/textViewPB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewPB" />
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
 </LinearLayout>
 </ScrollView>

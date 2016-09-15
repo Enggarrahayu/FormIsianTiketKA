@@ -1,9 +1,8 @@
 package id.sch.smktelkom_mlg.xirpl3012learn.formisiantiketka;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -98,16 +97,16 @@ public class MainActivity extends AppCompatActivity {
 
 
         String tk = etTK.getText().toString();
-        tvTK.setText("Tanggal Keberangkatan :" +tk);
+        tvTK.setText("Tanggal Keberangkatan :" + tk + "\n");
         if (tk.isEmpty())
         {
             etTK.setError("Tanggal Keberangkatan Belum Diisi");
         }
 
 
-        tvBB.setText("Kelas Kereta Api:" + sBB.getSelectedItem().toString()+"\n");
+        tvKelas.setText("Kelas Kereta Api: " + sBB.getSelectedItem().toString() + "\n");
 
-        String hasilcb = "Berat Bagasi: ";
+        String hasilcb = "Berat Bagasi: " + "\n";
         int starlen = hasilcb.length();
         if (cbB1.isChecked()) hasilcb+=cbB1.getText()+"\n";
         if (cbB2.isChecked()) hasilcb+=cbB2.getText()+"\n";
@@ -116,12 +115,12 @@ public class MainActivity extends AppCompatActivity {
         tvBB.setText(hasilcb);
 
 
-        if (hasilcb.length() == starlen) hasilcb += "Anda Belum Memilih Berat Bagasi";
+        if (hasilcb.length() == starlen) hasilcb += "Anda Belum Memilih Berat Bagasi" + "\n";
 
 
-        tvPD.setText("Banyak Penumpang Dewasa :" +sP1.getSelectedItem().toString()+"\n");
+        tvPD.setText("Banyak Penumpang Dewasa : " + sP1.getSelectedItem().toString() + "\n");
 
-        tvPB.setText("Banyak Penumpang Bayi:" +sP2.getSelectedItem().toString()+ "\n");
+        tvPB.setText("Banyak Penumpang Bayi: " + sP2.getSelectedItem().toString() + "\n");
 
 
         String hasil = null;
@@ -137,11 +136,11 @@ public class MainActivity extends AppCompatActivity {
 
         if (hasil == null)
         {
-            tvHasil.setText("Belum Memilih Mode Booking Tiket");
+            tvHasil.setText("Belum Memilih Mode Booking Tiket" + "\n");
         }
         else
         {
-            tvHasil.setText("Boking Tiket : " +hasil);
+            tvHasil.setText("Boking Tiket : " + hasil + "\n");
         }
     }
 }
