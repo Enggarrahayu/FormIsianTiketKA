@@ -5,9 +5,14 @@ Jumlah Penumpang Dewasa dan Bayi(Spinner) beseta beberapa Plain Text View dan Im
 beberapa logo, tombol kirim(Button) yang digunakan untuk menampilkan hasil pemesanan tiket.Aplikasi Form Isian Tiket KA tersebut digunakan untuk 
 memesan tiket kereta api jauh-jauh hari sebelum tanggal keberangkatan yang dilakukan secara online. Deteksi kesalahannya yaitu pada hampir
 semua komponen diberi peringatan apabila belum mengisi suatu komponen tersebut. 
+<br>
+<br>
+# Di Bawah Ini adalah Link dari Apk FormIsianTiketKA
+[LINK APK](https://drive.google.com/open?id=0B1SZFO4fEd8JV3Q1eW40MmRpLWs)
+<br>
+<br>
 
-
-SCREENSHOTS APLIKASI PADA ANDROID
+# SCREENSHOTS APK PADA ANDROID
 + ![Screenshot](https://github.com/Enggarrahayu/FormIsianTiketKA/blob/740e095c20f10734b33dc60149f280bc0ce30a58/formisi.jpg)
 
 + ![Screenshot](https://github.com/Enggarrahayu/FormIsianTiketKA/blob/740e095c20f10734b33dc60149f280bc0ce30a58/formisi2.jpg)
